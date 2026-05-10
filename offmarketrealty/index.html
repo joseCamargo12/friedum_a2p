@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Off-Market Realty — Sell or buy your home directly</title>
+  <meta name="description" content="Off-Market Realty connects FSBO sellers, buyers, and local service professionals. No agents, no commissions, just direct connections." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="nav-inner container">
+      <a href="/" class="logo">
+        <span class="logo-mark">◈</span>
+        <span class="logo-text">Off-Market Realty</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#how-it-works">How it works</a>
+        <a href="#for-you">For you</a>
+        <a href="#signup">Get started</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-eyebrow">No agents · No commissions · Direct connections</div>
+      <h1 class="hero-title">
+        Sell or buy your home<br />
+        <em>directly</em>.
+      </h1>
+      <p class="hero-sub">
+        A new kind of real estate marketplace where homeowners list, buyers
+        search, and local pros connect — without middlemen taking a cut.
+      </p>
+      <div class="hero-cta">
+        <a href="#signup" class="btn btn-primary">Get early access</a>
+        <a href="#how-it-works" class="btn btn-ghost">See how it works →</a>
+      </div>
+    </div>
+    <div class="hero-decor" aria-hidden="true"></div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how-it-works" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">01 — How it works</span>
+        <h2 class="section-title">Three steps. No agents in between.</h2>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3 class="step-title">List or search</h3>
+          <p class="step-text">
+            Sellers post their home in minutes. Buyers tell us what they're
+            looking for — area, budget, beds, baths, timeline.
+          </p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3 class="step-title">Get matched</h3>
+          <p class="step-text">
+            Our system continuously matches buyers with sellers who fit their
+            criteria, and notifies both sides when there's a real fit.
+          </p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3 class="step-title">Connect directly</h3>
+          <p class="step-text">
+            Talk to each other, schedule visits, and close the deal — with
+            access to vetted local pros (attorneys, inspectors, title agents)
+            when you need them.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- For sellers / buyers / pros -->
+  <section id="for-you" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">02 — Who it's for</span>
+        <h2 class="section-title">Built for three sides of every home sale.</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-tag">Sellers</div>
+          <h3 class="card-title">Keep your equity. Skip the 6%.</h3>
+          <p class="card-text">
+            List your home, set your price, and get matched with serious buyers.
+            No listing agent, no commission split.
+          </p>
+        </article>
+        <article class="card">
+          <div class="card-tag">Buyers</div>
+          <h3 class="card-title">Find homes before they hit the market.</h3>
+          <p class="card-text">
+            Tell us what you want. We surface FSBO listings that match —
+            and notify you the moment a new fit appears.
+          </p>
+        </article>
+        <article class="card">
+          <div class="card-tag">Local Pros</div>
+          <h3 class="card-title">Be the featured pro in your zip code.</h3>
+          <p class="card-text">
+            Attorneys, inspectors, painters, title agents — claim your spot
+            and get connected to active buyers and sellers in your area.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signup form -->
+  <section id="signup" class="section section-signup">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-label">03 — Get started</span>
+        <h2 class="section-title">Join the waitlist.</h2>
+        <p class="section-sub">
+          We'll let you know the moment your area opens up. Takes 30 seconds.
+        </p>
+      </div>
+
+      <form class="form" id="signup-form" novalidate>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="full_name">Full name</label>
+            <input type="text" id="full_name" name="full_name" required placeholder="Jane Doe" />
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="jane@example.com" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="phone">Mobile phone number</label>
+            <input type="tel" id="phone" name="phone" required placeholder="+1 (555) 123-4567" />
+          </div>
+          <div class="form-field">
+            <label for="role">I am a</label>
+            <select id="role" name="role" required>
+              <option value="">Select one</option>
+              <option value="seller">Seller</option>
+              <option value="buyer">Buyer</option>
+              <option value="pro">Service Professional</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="zip">ZIP code</label>
+          <input type="text" id="zip" name="zip" required placeholder="33131" maxlength="5" />
+        </div>
+
+        <!-- SMS Opt-In — REQUIRED FOR A2P 10DLC -->
+        <div class="consent-block">
+          <label class="consent-row">
+            <input type="checkbox" id="sms_consent" name="sms_consent" required />
+            <span>
+              <strong>I agree to receive SMS messages from Off-Market Realty</strong>
+              regarding property listings, buyer-seller matches, account updates,
+              and customer support. Message and data rates may apply. Message
+              frequency varies. Reply <strong>HELP</strong> for help,
+              <strong>STOP</strong> to cancel at any time.
+            </span>
+          </label>
+
+          <label class="consent-row">
+            <input type="checkbox" id="terms_consent" name="terms_consent" required />
+            <span>
+              I have read and agree to the
+              <a href="/terms.html">Terms &amp; Conditions</a> and
+              <a href="/privacy.html">Privacy Policy</a>.
+            </span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg">Join the waitlist</button>
+
+        <p class="form-disclaimer">
+          By submitting, you confirm consent to be contacted by Off-Market Realty.
+          We never share your information with third parties for marketing purposes.
+        </p>
+      </form>
+
+      <div class="form-success" id="form-success" hidden>
+        <h3>You're on the list.</h3>
+        <p>We'll be in touch soon with updates from your area.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">◈</span>
+        <span>Off-Market Realty</span>
+      </div>
+      <nav class="footer-links">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms &amp; Conditions</a>
+        <a href="mailto:admin@friedum.com">Contact</a>
+      </nav>
+      <div class="footer-meta">
+        © 2026 Friedum Inc. All rights reserved.<br />
+        1000 Brickell Plaza Apt 1915, Miami, FL 33131
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
