@@ -22,7 +22,7 @@ chmod -R 755 "$DEPLOY_DIR"
 
 echo "==> Linking nginx config..."
 if [ ! -f "$NGINX_CONF" ]; then
-  cp "$DEPLOY_DIR/nginx.conf" "$NGINX_CONF"
+  cp "$DEPLOY_DIR/infra/nginx.conf" "$NGINX_CONF"
   ln -sf "$NGINX_CONF" "$NGINX_ENABLED"
 fi
 
